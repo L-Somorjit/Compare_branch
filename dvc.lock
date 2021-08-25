@@ -10,7 +10,7 @@ stages:
     - path: data_raw.csv
       md5: a6aec8da63a5fa2619af025a76746f29
       size: 68868
-  process_data:
+  process:
     cmd: python process_data.py
     deps:
     - path: data_raw.csv
@@ -34,7 +34,7 @@ stages:
       size: 1471
     outs:
     - path: by_region.png
-      md5: a789d2d4025a7b0750e17088fe032d1f
+      md5: 68a0735e9e82b63bdee9fc58abbd4c3c
       size: 7914
     - path: metrics.json
       md5: f4844c28505568f336c5f91db3f1beb3
